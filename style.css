@@ -1,0 +1,236 @@
+/* General */
+header{
+    top: 0px;
+    position: sticky; /* Freez le header */
+    background-color: #ffffff; /* Couleur de Fond */
+}
+
+.header{ /* Haut de page */
+    width: 100%; /* Largeur */
+    height: 200px; /* Hauteur*/
+    font-family: Arial; /* Police */
+}
+
+.imglogo{ /* Image Logo Header */
+    width: 200px;
+    height: auto;
+}
+
+.Navboxs{ /* Placer les nav */
+    display: flex;
+    gap: 50px;
+    position: absolute; /* Forcer position */
+    top: 15%; /* Deplacer verticalement */
+    left: 50%; /* Deplacer horizontalement */
+    font-size: 35px; /* Taille texte */
+}
+
+nav a { /* Design nav */
+    color: black; /* Couleur */
+    text-decoration: none; /* Enleve le soulignage */
+}
+
+ul{ /* Points */
+    list-style: none; /* Enleve Points */
+}
+
+body{ /* Corps */
+    max-width: 1440px; /* Taille de l'écran */
+    margin: auto; /* Marge extérieur */
+    background-color: rgb(255, 255, 255); /* Couleur */
+}
+
+.footer{ /* Bas de page */
+    width: 100%; 
+    height: 200px; 
+    border: 2px solid rgb(255, 255, 255); /* Bordure */
+    position: relative; /* position élement  */
+    font-family: Arial; 
+}
+
+.plan { /* Titre lieu bas de page  */
+    font-size: 25px;
+    position: absolute;
+    left: 80%;
+}
+
+.coordonnées { /* Titre info bas de page  */
+   font-size: 25px;
+}
+
+.copyright{ /* info bas de page  */
+    position: absolute; 
+    top: 87%;
+    left: 48%;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(53, 53, 53);
+}
+
+h1,h2,h3{ /* Info texte  */
+  font-family: Arial; 
+}
+/* FIN */
+
+
+/* Accueil */
+.imgpromo{ /* Réglage image  */
+    width: 100%;
+    height: auto;
+}
+
+.cases-forfaits{ /* Réglage commun case  */
+  width: 100%;
+  display: flex; /*Deplacer box */
+  justify-content: center; /* Aligner horizontalement en centrant  */
+  gap: 25%; /* Espace element  */
+  margin-top: 40px; /* Marge extérieur haut  */
+  flex-wrap: wrap; /* Déplacer les elements a la ligne si y a plus de place  */
+  margin-bottom: 1px; /* Marge extérieur bas  */
+}
+
+.case{ /* Reglage case */
+  width: 200px;
+  height: 300px;
+  background: white;
+  border-radius: 25px; 
+  border: 1px solid #dcdcdc;
+  transition: 1s; /* Transition 1 seconde  */
+  padding: 10px;
+}
+
+.case:hover { /* Fin de trasition  */
+    transform: scale(1.20); /* Agrandir box  */
+}
+
+.titrego{ /* Reglage titre box  */
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial;
+}
+
+.prix{ /* Prix box  */
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+.textbox{ /* Texte box  */
+    font-size: 10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pourquoi { /* Argument vente bas de page accueil */
+text-align: center;
+margin-top: -40px;
+margin-bottom: 60px;
+}
+
+/* FIN */
+
+
+/* Forfaits */
+.titreforfait{ /* Réglage titre  */
+  font-family: Arial;
+  text-align: center;
+  font-size: 28px;
+}
+
+/* Voir Accueil case forfait */
+
+.ttcasesinfos { /* Reglage commun case  */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px; /*espace entre les boxs*/
+  margin-top: 40px; /* espace entre les boxs du haut*/
+}
+
+
+.caseinfo { /* Réglage case  */
+  width: 200px;
+  min-height: 200px;
+  border-radius: 25px; /*arrondi les bords*/
+  border: 1px solid rgb(101, 101, 101);
+  display: flex;
+  flex-direction: column; /*mettre les éléments en verticale*/
+  align-items: center; /*aligne les icones*/
+  text-align: center; /*aligner le texte*/
+  padding: 2px; /*marge intérieur*/
+  margin-right: 50px; /*marge exterieur entre chaque box*/
+}
+
+.imgban { /* Image banniere  */
+    width: 150px;
+    height: auto;
+}
+
+.titre-info { /* Titre Case Banniere  */
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.texte-info { /* Texte case banniere  */
+  font-size: 14px;
+  color: rgb(73, 73, 74);
+  font-family: Arial;
+}
+
+/* FIN */
+
+/* Aide et Contact */
+.bloc-service { /* Reglage image app  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.imgapp { /* Reglage image app  */
+    width: 400px;
+    height: auto;
+}
+
+.texte-service { /* Reglage Titre image assist  */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.faq { /* Reglage Box FAQ  */
+width: 90%;
+margin: 50px auto;
+margin-left: 20%;
+}
+
+.faq-item { /* Reglage Box FAQ  */
+border: 1px solid black;
+border-radius: 15px;
+padding: 20px;
+margin-bottom: 20px;
+width: 900px;
+}
+
+.faq-item:hover .reponse { /* Reglage transition passage souris  */
+opacity: 100%; /* Opacité  */
+}
+
+.question { /* Reglage Question  */
+font-size: 22px;
+color: black;
+}
+
+.reponse { /* Reglage Reponse  */
+margin-top: 12px;
+font-size: 16px;
+color: rgb(67, 67, 67);
+opacity: 0%;
+transition: opacity 0.4s ease;
+}
+
+/* FIN */
+
+
